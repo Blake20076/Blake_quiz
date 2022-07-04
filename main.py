@@ -5,10 +5,10 @@ import random
 
 #globals and questions list
 score = 0
-english = ["Yellow", "Mail", "dog", "keyboard", "hello", "okay"]
-right_answer = ["kōwhai", "mēra", "kuri", "papapātuhi", "kia ora", "pai"]
-option_1 = ["kia ora", "mera","kai", "free wrong answer", "kia ōra", "pōi"]
-option_2 = ["whakautu hē", "mōra","whakamaramatanga", "pai", "pal"]
+english = ["Yellow", "Mail", "dog", "keyboard", "hello", "okay", "quiz", "plate", "oven", "dryer", "dishwasher" ]
+right_answer = ["kōwhai", "mēra", "kuri", "papapātuhi", "kia ora", "pai", "pātaitai", "pereti", "oumu", "whakamaroke", "horoi rihi"]
+option_1 = ["kia ora", "mera","kai", "free wrong answer", "kia ōra", "pōi", "Ingarihi", "horoi", "oven", "pai", "free wrong answer"]
+option_2 = ["whakautu hē", "mōra","whakamaramatanga", "pai", "pal", "whakaaturanga kiriata", "pani", "horoi", "whakamaramatanga", "kōwhai"]
 
 #define a function to generate a question
 def generate_question(english, right_answer, option_1, option_2 ):
@@ -46,9 +46,6 @@ def generate_question(english, right_answer, option_1, option_2 ):
     else:
       print ("incorrect")        
 #genrate 3 questions pulling possible answer
-for i in range(0,5):
+for i in range(0,10):
   generate_question(english[i],right_answer[i],option_1[i],option_2[i])
-
-
-print (score)
-
+  print (score)
